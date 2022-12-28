@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+  <head>
+    <title>My Portfolio | Ana sayfa</title>
+
+    <meta charset="utf-8" />
+
+    <meta name="description" content="Web frontend development" />
+
+    <!-- * Responsive Web Coding-->
+    <!-- 1- Viewport meta tagi -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- reset css kendi css dökümanızdan önce dahil edilir -->
+    <link rel="stylesheet" href="styles/reset.css" />
+
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <!-- Archivo Narrow, Julius One Sans fonts.google.com-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&family=Julius+Sans+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/939cd96f72.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js" defer></script>
+  </head>
+
+  <body>
+    <div id="page">
+      <header>
+        <div class="limited-width">
+          <a href="#" class="logo"> DELUXE </a>
+
+          <button type="button" class="btn-hamburger">
+            <i class="fa fa-navicon"></i>
+          </button>
+
+          <nav class="nav-hamburger">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Work</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div> 
+      </header>
+      <main>
+        <div>
+          <section class="hero">
+            <h1>HELLO, I'M JOHN GOLD</h1>
+            <h2>WEB FRONTEND DEV</h2>
+          </section>
+        </div>
+        <div>
+          <section class="about">
+            <!-- Carousel -->
+            <article class="carousel">
+              <!-- Nav Button -->
+              <nav>
+                <ul>
+                  <li>
+                    <button type="button" data-index="0"></button>
+                  </li>
+                  <li>
+                    <button type="button" data-index="1"></button>
+                  </li>
+                  <li>
+                    <button type="button" data-index="2"></button>
+                  </li>
+                </ul>
+              </nav>
+              <div class="slider">
+                <section>
+                  <h1>About</h1>
+                  <h2>Our Awesome Story</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ex vitae sapiente possimus adipisci blanditiis, quo praesentium repellendus veniam consequatur architecto fuga quasi facilis sed temporibus eius earum cumque enim officia suscipit. Pariatur ipsa quod praesentium eveniet voluptas velit aspernatur fuga accusantium ipsum necessitatibus unde a, officiis eligendi, nam corrupti temporibus sunt! Qui, sed quasi!
+                  </p>
+                </section>
+                <section>
+                  <h1>Skills</h1>
+                  <h2>Our Awesome Story</h2>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit rem suscipit, eum, mollitia ipsam optio magni, omnis debitis fugit nihil consequatur dolorem non aperiam a placeat explicabo! Blanditiis, ab in fuga, dolores explicabo cum inventore a totam repellendus suscipit rem..
+                  </p>
+                </section>
+                <section>
+                  <h1>Exp</h1>
+                  <h2>My Working Experiences</h2>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident expedita autem molestias quibusdam perspiciatis deserunt repellat suscipit impedit in. Exercitationem officia unde, voluptatem officiis quisquam voluptate itaque beatae illo quae numquam tempore tempora consequatur asperiores?
+                  </p>
+                </section>
+              </div>
+            </article>
+  
+            <figure>
+              <img src="img/avat.jpg" alt="Adam" />
+            </figure>
+          </section>
+          <section class="skills-and-services">
+            <section class="skills text-box">
+              <h1>Skills</h1>
+              <div class="container-percentage-bars">
+                <h3>Design - 90%</h3>
+                <div class="fullbar">
+                  <div class="percent p9"></div>
+                </div>
+                <h3>UI/UX - 60%</h3>
+                <div class="fullbar">
+                  <div class="percent p6"></div>
+                </div>
+                <h3>Frontend - 80%</h3>
+                <div class="fullbar">
+                  <div class="percent p8"></div>
+                </div>                
+              </div>
+            </section>
+    <!-- Section Services -->
+            <section class="services text-box">
+              <h1>Services</h1>
+              <ul class="list-type-1">
+                <li>
+                  <div>
+                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h2>Marketing</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <i class="fa fa-code-fork" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h2>Development</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </section>
+          <section class="portfolio">
+            <article class="text-box">
+              <h1>Portfolio</h1>
+              <h2>Best Projects</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti reprehenderit distinctio voluptate hic nobis non, praesentium, harum esse quis impedit aspernatur? Quaerat et temporibus animi, officiis error ut voluptates eveniet? Asperiores, totam culpa.
+              </p>
+            </article>
+            <figure>
+              <div class="trans-cover">
+                <a href="#">
+                  <h1>Project Title</h1>
+                </a>
+              </div>
+              <img src="img/project5.jpg" alt="business card">
+            </figure>
+            <figure>
+              <div class="trans-cover">
+                <a href="#">
+                  <h1>Project Title</h1>
+                </a>
+              </div>
+              <img src="img/project1.jpg" alt="black smart watch">
+            </figure>
+            <figure>
+              <div class="trans-cover">
+                <a href="#">
+                  <h1>Project Title</h1>
+                </a>
+              </div>
+              <img src="img/project4.jpg" alt="Asian girl on laptop screen with blue mockup written on it.">
+            </figure>
+            <figure>
+              <div class="trans-cover">
+                <a href="#">
+                  <h1>Project Title</h1>
+                </a>
+              </div>
+              <img src="img/project3.jpg" alt="bottles">
+            </figure>
+            <article class="carousel references">
+              <!-- Nav Button -->
+              <nav>
+                <ul>
+                  <li>
+                    <button type="button" data-number="0"></button>
+                  </li>
+                  <li>
+                    <button type="button" data-number="1"></button>
+                  </li>
+                  <li>
+                    <button type="button" data-number="2"></button>
+                  </li>
+                </ul>
+              </nav>
+              <div class="slider references">
+                <section>
+                  <img src="img/1.jpg" alt="John Doe">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, hic! Voluptate molestiae tempora dolor possimus aut eaque hic soluta a.
+                  </p>
+                  <h2>John Doe</h2>
+                </section>
+
+                <section>
+                  <img src="img/2.jpg" alt="John Doe">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, hic! Voluptate molestiae tempora dolor possimus aut eaque hic soluta a.
+                  </p>
+                  <h2>John Doe</h2>
+                </section>
+
+                <section>
+                  <img src="img/3.jpg" alt="John Doe">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, hic! Voluptate molestiae tempora dolor possimus aut eaque hic soluta a.
+                  </p>
+                  <h2>John Doe</h2>
+                </section>
+                
+                   
+                
+                
+              </div>
+            </article>
+          </section> 
+          <section class="contact">
+            <section class="text-box">
+              <h1>Contact</h1>
+            <ul class="list-type-1" >
+                <li>
+                  <div>
+                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h2>Phone</h2>
+                    <p>8 700 500 100</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h2>E-mail</h2>
+                    <p>dummy@mail.com</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    <h2>Address</h2>
+                    <p>USA New-York 72 STREET</p>
+                  </div>
+                </li>
+            </ul>
+            </section> 
+            <figure>
+              <img src="img/back.jpg" alt="back">
+            </figure>
+          </section>
+          <footer>
+            <p class="typ-micro">
+              Copyright © 2022 by Ipek. All rights reserved.
+            </p>
+            
+          </footer>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

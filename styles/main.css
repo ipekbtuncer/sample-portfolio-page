@@ -1,0 +1,391 @@
+*{
+   box-sizing: border-box;
+}
+
+body{
+   font-family: 'Julius Sans One', sans-serif;   
+}
+
+img{
+   max-width: 100%;
+}
+
+figure img{
+   display: block;
+   object-fit: cover;
+   height: 900px;
+}
+
+a{
+   text-decoration: none;
+   color: inherit;
+}
+
+p{
+   font-family: 'Archivo Narrow', sans-serif;
+   line-height: 24px;
+   text-align: justify;
+   letter-spacing: 2px;
+}
+
+h2{
+   margin-bottom: 8px;
+}
+
+.limited-width{
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+/* Typography */
+
+.typ-micro{
+   font-size: 11px;
+   letter-spacing: 2px;
+}
+
+#page .logo{
+   font-size:22px;
+   letter-spacing: 4px;
+   font-weight:700;
+ }
+
+
+/* --- Page Header Styles --- */
+
+#page > header{
+   background-color: black;
+   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.5);
+   padding: 24px 16px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   color: #ccc;
+   z-index: 999; 
+}
+
+#page > header > .limited-width{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+#page > header  nav{
+   width: 100%;
+}
+
+/* --- Main Styles --- */
+
+main > div:nth-child(2){
+   border: 20px solid #1e2024;
+   height: 100%;
+}
+
+main  section  h1{
+   font-size: 40px;
+   line-height: 64px;
+   margin-bottom: 32px;
+   letter-spacing: 8px;
+   
+}
+
+.text-box{
+   padding: 64px;
+}
+
+/* --- Section Hero --- */
+
+main section.hero{
+   height: 100vh;
+   background-image: url(../img/img1.jpg);
+   background-size: cover;
+   background-position: center;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border:none;
+}
+
+/* --- Section About --- */
+
+main section.about{
+   align-items: center;
+}
+
+main section.about article section{ 
+   width: 33.333%;
+}
+
+/* --- Section Skills --- */
+
+main section.skills{
+   background-image:url("../img/serv.jpg");
+   background-size: cover;
+   height: 100vh;
+   background-position: center;
+   color: white;
+}
+
+/* --- Section Services and Contact --- */
+
+.list-type-1 li{
+   display: flex;
+   margin-bottom: 64px;
+}
+
+.list-type-1 li div:first-child{
+   width: 10%;
+   margin: 12px;
+}
+
+.list-type-1 li div:last-child{
+   width: 90%;
+}
+
+.list-type-1 li i{
+   font-size: 24px;
+   color: #222222;
+}
+
+/* Section Porfolio */
+
+main section.portfolio{
+   align-items: center;
+}
+
+
+
+/* Transparent Cover */
+
+.portfolio figure{
+   position: relative;
+}
+ 
+.trans-cover{
+   width: 100%;
+   height: 900px;
+   color: #ffffff;
+   background-color:rgba(34, 34, 34);
+   position: absolute;
+   opacity: 0;
+   transition: opacity 0.5s;
+   
+}
+ 
+.portfolio figure div.trans-cover h1{
+   padding: 64px;
+   opacity: 0;
+}
+
+.portfolio figure:hover .trans-cover {
+   display: inherit;
+   opacity: 0.5;
+   
+}
+
+.portfolio figure:hover div.trans-cover h1{
+   opacity: 1;
+}
+ 
+
+
+/* --- Page Footer Styles --- */
+
+#page footer{
+   background-color: black;
+   color: #ccc;
+   text-align: center;
+   height: 200px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+/* ---Carousel Begins--- */
+
+.carousel{
+   
+   height: 500px;
+   overflow: hidden;
+   position: relative;
+ 
+}
+.carousel .slider{
+   width: 300%;
+   height: 100%;
+   display: flex;
+   transition: margin-left 0.5s ease-out;
+}
+
+.carousel .slider > section{
+   padding: 8px 64px;
+}
+
+.carousel.references{ 
+   align-items: center;
+   text-align: center;
+}
+
+.references img{
+   border-radius: 50%;
+   width: 25%;
+}
+
+/* Nav Button Begins */
+
+.carousel nav{
+   position: absolute;
+   bottom: 24px;
+   left: 64px;
+}
+
+.carousel nav ul{
+   display: flex;
+   gap: 16px;
+}
+
+.carousel nav button{
+   background-color: #ccc;
+   width: 20px;
+   height: 4px;
+   border: none;
+   border-radius: 2px;
+}
+
+
+.carousel.references nav{
+   left:50%;
+   transform:translateX(-50%);
+}
+
+.active, .carousel nav button:hover{
+   background-color: #222222;
+   cursor: pointer;
+}
+
+
+
+/* Nav Button Ends */
+
+/* ---Carousel Ends--- */
+
+/* --- Container Percentage Bars Beging --- */
+
+.container-percentage-bars .fullbar{
+   height: 2px;
+   background-color: #6c757d;
+   margin: 8px 0 88px;
+}
+
+.container-percentage-bars .fullbar .percent{
+   height: 2px;
+   background-color: white;
+}
+
+.container-percentage-bars .fullbar .percent.p9{
+   width: 90%;
+}
+
+.container-percentage-bars .fullbar .percent.p8{
+   width: 80%;
+}
+
+.container-percentage-bars .fullbar .percent.p6{
+   width: 60%;
+}
+/* --- Container Percentage Bars Ends --- */
+
+/* --- Nav Hamburger Begins --- */
+.btn-hamburger{
+   background-color: transparent;
+   border: none;
+   color: inherit;
+   font-size: 16px;
+}
+.nav-hamburger{
+   display: none;
+}
+
+.nav-hamburger i{
+   font-size: 16px;
+}
+
+.nav-hamburger li{
+   margin-bottom: 8px;
+}
+
+.nav-hamburger li.active::after{
+   content: '';
+   display: block;
+   width: 36px;
+   height: 1px;
+   background-color: #ccc;
+}
+
+.nav-hamburger a{
+   
+   display: block;
+   padding: 8px 0;
+   width: 100%;
+   font-family: 'Archivo Narrow', sans-serif;
+   font-size: 12px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+
+@media screen and (min-width:1000px) {
+
+   
+   .btn-hamburger{
+      display: none;
+   }
+
+   #page > header nav{
+      width: auto;
+   }
+
+   #page > header nav ul{
+      display: flex;
+      gap: 24px;
+   }
+
+   .nav-hamburger{
+      display: block;
+   }
+
+   main section.about{
+      display: flex;
+   }
+
+   main section.about article, main section.about figure {
+      width: 50%;
+   }
+
+   main section.skills-and-services{
+      display: flex;
+   }
+
+   main section.skills-and-services .skills,  main section.skills-and-services .services{
+      width: 50%;
+   }
+
+   main section.portfolio{
+      display: flex;
+      flex-wrap: wrap;
+   }
+   main section.portfolio article, main section.portfolio figure{
+      width: 50%;
+   }
+
+   main section.contact{
+      display: flex;
+      flex-wrap: wrap;
+   }
+   main section.contact .text-box, main section.contact figure {
+      width: 50%;
+   }
+   
+}
