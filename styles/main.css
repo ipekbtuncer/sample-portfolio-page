@@ -87,7 +87,7 @@ main  section  h1{
    line-height: 64px;
    margin-bottom: 32px;
    letter-spacing: 8px;
-   
+      
 }
 
 .text-box{
@@ -107,6 +107,7 @@ main section.hero{
    justify-content: center;
    align-items: center;
    border:none;
+   text-align: center;
 }
 
 /* --- Section About --- */
@@ -118,6 +119,7 @@ main section.about{
 main section.about article section{ 
    width: 33.333%;
 }
+
 
 /* --- Section Skills --- */
 
@@ -247,7 +249,7 @@ main section.portfolio{
    gap: 16px;
 }
 
-.carousel nav button{
+.btn{
    background-color: #ccc;
    width: 20px;
    height: 4px;
@@ -261,7 +263,7 @@ main section.portfolio{
    transform:translateX(-50%);
 }
 
-.active, .carousel nav button:hover{
+.active, .btn:hover{
    background-color: #222222;
    cursor: pointer;
 }
@@ -356,6 +358,7 @@ main section.portfolio{
       display: block;
    }
 
+   
    main section.about{
       display: flex;
    }

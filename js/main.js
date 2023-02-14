@@ -1,10 +1,25 @@
 
 
-const carouselNavEl = document.querySelector('.carousel  nav');
+const carouselNavEl = document.querySelector('#nav-btn');
 const sliderEl = document.querySelector('.carousel .slider');
+const btns = carouselNavEl.getElementsByClassName('btn');
 
-const carouselNavEl2 = document.querySelector('.carousel.references  nav');
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+
+
+  
+
+const carouselNavEl2 = document.querySelector('#ref-nav-btn');
 const sliderEl2 = document.querySelector('.carousel.references .slider');
+const btnsRef = carouselNavEl2.getElementsByClassName('btn');
+
+
 
 
 carouselNavEl.addEventListener('click', handleClick)
